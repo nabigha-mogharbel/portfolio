@@ -63,17 +63,17 @@ export const PROFILE: ProfileConfig = {
   },
   highlightLinks: ["github"],
   linksPlacement: {
-    header: ["email", "github", "website"],
+    header: ["email", "github"],
     about: false,
     footer: false,
   },
 }
 
 export const NAV_LINKS: LinkConfig[] = [
-  { href: "/projects", label: "Projects" },
+  // { href: "/projects", label: "Projects" },
   { href: "/publications", label: "Publications" },
-  { href: "/teaching", label: "Teaching" },
-  { href: "/blog", label: "Blog" },
+  // { href: "/teaching", label: "Teaching" },
+  // { href: "/blog", label: "Blog" },
 ]
 
 export const NAVIGATION: LinkConfig[] = NAV_LINKS.map(({ href, label }) => ({

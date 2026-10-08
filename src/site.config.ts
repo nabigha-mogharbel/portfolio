@@ -10,7 +10,7 @@ export const SITE: SiteConfig = {
   title: "Nabigha MOGHARBEL",
   description:
     "Research in computational social science, open methods, and responsible computing.",
-  href: "https://portfolio.nabigha-mogharbel.github.io",
+  href: "https://nabigha-mogharbel.github.io/portfolio/",
   author: "Nabigha MOGHARBEL",
   dir: "ltr",
   defaultPageImage: "/img/social-preview.png",

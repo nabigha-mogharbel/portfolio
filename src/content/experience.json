@@ -1,56 +1,73 @@
 [
   {
-    "id": "digital-society-2025",
+    "id": "microcosme-m2-2026",
     "category": "research",
-    "title": "Research Fellow",
-    "org": "Center for Digital Society, Example University",
-    "orgUrl": "https://example.edu/research/digital-society",
-    "startDate": "2025-09",
-    "location": "Example City",
-    "description": "Studies how automated systems shape access to public information, with an emphasis on transparent evaluation and reproducible research."
+    "title": "M2 Research Intern - Systems Biology",
+    "orgs": ["MICROCOSME-INRIA,", "BIOP-LIPhy"],
+    "orgUrls": [
+      "https://team.inria.fr/microcosme/",
+      "https://liphy.univ-grenoble-alpes.fr/en/research/teams/biop-fluctuations-regulations-and-evolution-living-systems"
+    ],
+    "startDate": "2026-02",
+    "endDate": "2026-07",
+    "location": "Grenoble, France",
+    "description": "Developed coarse-grained and self-replicating models of bacterial growth and bioproduction, focusing on bacterial production of propanediol. Performed E. coli experiments for model calibration and validation and combined mathematical modelling, computational analysis and microbiological experiments. Collaborated with the Suckjoon Jun Lab at UC San Diego on single-cell versus population E. coli experiments using fluorescent ribosome reporters, resulting in a bioRxiv preprint.",
+    "linkUrl": "/assets/ReportNabighaMogharbelM2.pdf",
+    "linkTitle": "Report"
   },
   {
-    "id": "open-methods-2024",
+    "id": "microcosme-m1-2025",
     "category": "research",
-    "title": "Graduate Research Assistant",
-    "org": "Open Methods Lab, Example University",
-    "orgUrl": "https://example.edu/research/open-methods",
-    "startDate": "2024-01",
-    "endDate": "2025-08",
-    "location": "Example City",
-    "description": "Built documented data pipelines and evaluation tools for collaborative computational social science projects."
+    "title": "Optional Research Intern - Systems Biology",
+    "orgs": ["MICROCOSME-INRIA"],
+    "orgUrls": ["https://team.inria.fr/microcosme/"],
+    "startDate": "2025-04",
+    "endDate": "2025-07",
+    "location": "Grenoble, France",
+    "description": "Analysed the Mycobacterium tuberculosis exo-metabolome using genome-scale metabolic modelling. Integrated experimental data into a genome-scale model, applied Flux Balance Analysis and sampling approaches, and analysed model outputs to investigate changes in metabolic behaviour and pathways under different conditions."
   },
   {
-    "id": "civic-data-2023",
+    "id": "epsp-timc-m1-2025",
     "category": "research",
-    "title": "Data Science Research Intern",
-    "org": "Civic Data Collaborative",
-    "orgUrl": "https://research.example.org/civic-data",
-    "startDate": "2023-06",
-    "endDate": "2023-09",
+    "title": "M1 Research Intern - Data Analysis & Machine Learning",
+    "orgs": ["EPSP-TIMC"],
+    "orgUrls": ["https://www.timc.fr/axes-recherche/equipes-recherche/epsp/"],
+    "startDate": "2025-02",
+    "endDate": "2025-04",
+    "location": "Grenoble, France",
+    "description": "Analysed clinical and cognitive data from the ADNI database using statistical and machine-learning approaches. Developed a classification framework for identifying patterns associated with Alzheimer’s disease and contributed to research resulting in a peer-reviewed publication."
+  },
+  {
+    "id": "codebrave-trainer",
+    "category": "professional",
+    "title": "Robotics and Programming Trainer",
+    "orgs": ["CodeBrave"],
+    "orgUrls": ["https://www.codebrave.org/"],
+    "startDate": "2024-06",
+    "endDate": "2025-06",
     "location": "Remote",
-    "description": "Developed quality checks for public datasets and contributed reproducible notebooks to an open research toolkit."
+    "description": "Taught 12 high school students Python and front-end web development in a robotics and programming bootcamp. \n Developed course materials, exercises, challenges and assessment criteria."
   },
   {
-    "id": "responsible-computing-2024",
-    "category": "teaching",
-    "title": "Teaching Assistant, Responsible Computing",
-    "org": "Example University",
-    "orgUrl": "https://example.edu",
-    "startDate": "2024-09",
-    "endDate": "2025-05",
-    "location": "Example City",
-    "description": "Led discussion sections on data ethics, algorithmic accountability, and communicating uncertainty."
+    "id": "vianeos-ios-developer",
+    "category": "professional",
+    "title": "iOS Developer",
+    "orgs": ["Vianeos"],
+    "orgUrls": ["https://www.vianeos.com/en/home-vianeos"],
+    "startDate": "2023-08",
+    "endDate": "2024-06",
+    "location": "Tripoli, Lebanon",
+    "description": "Developed the Orbit Now video-on-demand and live-TV application using Swift. \n Collaborated with product, project-management, design and QA teams and contributed to application performance optimization."
   },
   {
-    "id": "example-university-2024",
-    "category": "education",
-    "title": "M.S. in Computational Social Science",
-    "org": "Example University",
-    "orgUrl": "https://example.edu",
-    "startDate": "2022-09",
-    "endDate": "2024-05",
-    "location": "Example City",
-    "description": "Coursework included statistical modeling, machine learning, research design, and data visualization."
+    "id": "codi-tech-full-stack",
+    "category": "professional",
+    "title": "Full-Stack Developer",
+    "orgs": ["Codi-Tech"],
+    "orgUrls": ["https://www.codi-tech.com/"],
+    "startDate": "2022-10",
+    "endDate": "2023-06",
+    "location": "Tripoli, Lebanon",
+    "description": "Developed web applications using Node.js/Express, PHP/Laravel, JavaScript, React and SQL. Worked with Linux/LAMP environments and Agile project-management practices."
   }
 ]

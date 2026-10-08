@@ -68,7 +68,7 @@ export const SiteConfigSchema = z.object({
           "reddit",
         ]),
       )
-      .default(["email", "x"]),
+      .default(["email"]),
   }),
 
   /**
@@ -78,10 +78,12 @@ export const SiteConfigSchema = z.object({
   home: z.object({
     /** Number of career highlights to show on the home page. Set to 0 to hide. */
     careerHighlightCount: z.number().int().nonnegative().default(5),
+    /** Number of education highlights to show on the home page. Set to 0 to hide. */
+    educationHighlightCount: z.number().int().nonnegative().default(4),
     /** Number of recent updates to show on the home page. Set to 0 to hide. */
     updateCount: z.number().int().nonnegative().default(3),
     /** Number of selected publications to show on the home page. Set to 0 to hide. */
-    publicationCount: z.number().int().nonnegative().default(3),
+    publicationCount: z.number().int().nonnegative().default(2),
   }),
 
   // Theme settings

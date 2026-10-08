@@ -1,7 +1,4 @@
-I study how computational systems shape public knowledge and collective
-decision-making. My work combines **open data**, reproducible analysis, and
-human-centered evaluation.
-
-This site is generic demonstration content for Astro Scholar. Replace the
-profile, publications, projects, and writing with your own work through the
-Markdown-first customization surfaces documented in the repository.
+BioHealth Engineering graduate with an interdisciplinary background in microbiology, bacterial biotechnology, systems biology, molecular
+biology and computational biology. Research experience includes bacterial growth and bioproduction modeling, genome-scale metabolic
+modelling, experimental work with E.coli, biological data analysis and machine learning. Strong scientific programming background in Python
+and R, complemented by previous professional software-development experience.

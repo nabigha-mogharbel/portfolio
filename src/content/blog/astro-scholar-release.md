@@ -194,7 +194,6 @@ and BibTeX publications. Use the matching source file for each kind of record:
 | Project | `src/content/projects/*.md` |
 | Update | `src/content/updates/*.md` |
 | Publication | `src/content/publications/main.bib` |
-| Person | `src/content/people.toml` |
 
 This separation keeps a publication's citation data independent from the prose
 that explains it. It also lets the same project or author appear in several

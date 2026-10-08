@@ -4,21 +4,24 @@ import { getCollection } from "astro:content"
 import { PROFILE, SITE } from "@site-config"
 import { loadSelectedPublications } from "@/lib/publications/loader"
 import Layout from "@/layouts/Layout.astro"
-import Button from "@/components/base/Button.astro"
 import CardGroup from "@/components/base/card/CardGroup.astro"
 import Section from "@/components/layout/Section.astro"
 import Profile from "@/components/profile/Profile.astro"
 import PubCard from "@/components/publications/PubCard.astro"
 import ExperienceTimeline from "@/components/timeline/ExperienceTimeline.astro"
+import TechStack from "@/components/projects/TechStack.astro"
+import techStack from "@/content/tech-stack.json"
 
 import "@/styles/callout.css"
 
 const {
-  home: { careerHighlightCount, publicationCount },
+  home: { careerHighlightCount, educationHighlightCount, publicationCount },
 } = SITE
 
 const careerHighlights =
   careerHighlightCount > 0 ? await getCollection("experience") : []
+const educationHighlights =
+  careerHighlightCount > 0 ? await getCollection("education") : []
 const cvHref =
   typeof PROFILE.links.cv === "object"
     ? PROFILE.links.cv?.href
@@ -33,7 +36,7 @@ const selectedPublications =
   <Profile profile={PROFILE} />
 
   {selectedPublications.length > 0 && (
-      <Section title="Selected publications" moreLink="/publications">
+      <Section title="Publications" moreLink="/publications" moreText="">
         <CardGroup class="selected-publications">
           {selectedPublications.map((pub) => (
             <PubCard pub={pub} filterableTags={false} />
@@ -51,6 +54,20 @@ const selectedPublications =
         />
       </Section>
     )}
+
+  {educationHighlights.length > 0 && (
+      <Section title="Education highlights" moreLink={cvHref} moreText="see CV →">
+        <ExperienceTimeline
+          entries={educationHighlights}
+          limit={educationHighlightCount}
+          itemClass="home-education-content"
+        />
+      </Section>
+    )}
+
+  <Section title="Skills" class="tech-stack-section">
+    <TechStack {...techStack} />
+  </Section>
 </Layout>
 
 <style>

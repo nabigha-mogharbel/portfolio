@@ -9,7 +9,7 @@ import TimelineDate from "./TimelineDate.astro"
 import TimelineItem from "./TimelineItem.astro"
 
 interface Props {
-  entries: CollectionEntry<"experience">[]
+  entries: CollectionEntry<"experience" | "education">[]
   limit?: number
   /** Extra class on each description, for callers that want to clamp it. */
   itemClass?: string
@@ -36,15 +36,27 @@ const displayed = typeof limit === "number" ? sorted.slice(0, limit) : sorted
       <p class="experience-title">
         <span>{entry.data.title}</span>
         {" @ "}
-        {entry.data.orgUrl ? (
-          <Link href={entry.data.orgUrl} external underline>
-            {entry.data.org}
-          </Link>
-        ) : (
-          <span>{entry.data.org}</span>
-        )}
+        {entry.data.orgs.map((org, index) => {
+          const url = entry.data.orgUrls?.[index];
+
+          return url ? (
+            <Link href={url} external underline>
+              {org.trim()}
+            </Link>
+          ) : (
+            <span>
+              {org.trim()}
+            </span>
+          );
+        })}
+
         {entry.data.location && <span class="experience-location"> · {entry.data.location}</span>}
       </p>
+      {entry.data.linkTitle && entry.data.linkUrl && (
+        <p class="experience-link"><Link href={entry.data.linkUrl} external underline>
+              {entry.data.linkTitle}
+            </Link></p>
+      )}
       {entry.data.description && (
         <p class:list={["experience-description", itemClass]}>{entry.data.description}</p>
       )}

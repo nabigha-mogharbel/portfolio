@@ -1,50 +1,57 @@
 {
-  "description": "Languages, frameworks, and infrastructure from my work.",
+  "description": "Wet lab skills, languages, frameworks and courses.",
   "groups": [
+    {
+      "name": "Wet lab",
+      "icon": "mingcute:ai-line",
+      "items": [
+        "Microbiology techniques (L1)",
+        "PCR",
+        "SDS-PAGE",
+        "Microplate reader",
+        "Carbon source quantification"
+      ]
+    },
     {
       "name": "Languages",
       "icon": "mingcute:code-line",
-      "items": ["Python", "TypeScript", "JavaScript", "SQL", "Bash", "R"]
+      "items": ["Python", "JavaScript", "SQL", "MATLAB", "R", "Swift", "PHP"]
     },
     {
-      "name": "AI & ML",
-      "icon": "mingcute:ai-line",
-      "items": [
-        "LLM",
-        "prompt engineering",
-        "evaluation",
-        "agents",
-        "RAG",
-        "Fine-tuning",
-        "PyTorch",
-        "Hugging Face ecosystem",
-        "Unsloth",
-        "Inspect AI"
-      ]
-    },
-    {
-      "name": "Backend & Data",
+      "name": "Packages & Tools",
       "icon": "mingcute:server-line",
       "items": [
-        "FastAPI",
-        "Flask",
-        "Express.js",
+        "Laravel",
+        "NodeJS",
         "REST APIs",
         "PostgreSQL",
         "SQLite",
-        "ClickHouse",
-        "Prisma"
+        "Prisma",
+        "React",
+        "SwiftUI",
+        "numpy",
+        "pandas",
+        "COBRA Toolbox",
+        "Git"
       ]
     },
     {
-      "name": "Frontend & Product",
-      "icon": "mingcute:layout-line",
-      "items": ["React", "Astro", "Next.js", "Tailwind CSS", "shadcn/ui"]
-    },
-    {
-      "name": "DevOps",
+      "name": "Courses",
       "icon": "mingcute:terminal-box-line",
-      "items": ["Git", "Docker", "CI/CD", "Vercel", "Railway"]
+      "items": [
+        "Microbiology",
+        "Immunology",
+        "Molecular Biology",
+        "Genetics & Genomics",
+        "Biochemistry",
+        "Cell Biology",
+        "Bioinformatics",
+        "Data Analysis & Statistics",
+        "Machine Learning & Deep Learning",
+        "Systems Biology",
+        "Image Processing",
+        "Proteomics"
+      ]
     }
   ]
 }

@@ -7,11 +7,11 @@ import type {
 } from "@/types"
 
 export const SITE: SiteConfig = {
-  title: "My Scholar",
+  title: "Nabigha MOGHARBEL",
   description:
     "Research in computational social science, open methods, and responsible computing.",
-  href: "https://myscholar.pages.dev",
-  author: "Alex Morgan",
+  href: "https://portfolio.nabigha-mogharbel.github.io",
+  author: "Nabigha MOGHARBEL",
   dir: "ltr",
   defaultPageImage: "/img/social-preview.png",
   defaultPostImage: "/img/social-preview.png",
@@ -37,6 +37,7 @@ export const SITE: SiteConfig = {
 
   home: {
     careerHighlightCount: 4,
+    educationHighlightCount: 3,
     updateCount: 3,
     publicationCount: 3,
   },
@@ -53,24 +54,26 @@ export const SITE: SiteConfig = {
 
 export const PROFILE: ProfileConfig = {
   name: SITE.title,
-  tagline: "Computational social scientist and open-methods",
-  email: "hi@mychiffonn.com",
-  location: "Example City",
-  pronouns: "they/them",
+  othernames: "نابغة مغربل | /na\u02D0bi\u0263a mu\u0263arbil/",
+  tagline: "Interdisciplinary biologist",
+  email: "nabigha.mogharbel@outlook.com",
+  pronouns: "she/her",
   links: {
-    github: "https://github.com/mychiffonn",
-    website: "https://mychiffonn.com/",
+    github: "https://github.com/nabigha-mogharbel/",
+    cv: "/assets/Nabigha_Mogharbel_CV.pdf",
+    googleScholar:
+      "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Nabigha+Mogharbel+&oq=nabigha",
   },
-  highlightLinks: ["github"],
+  highlightLinks: [],
   linksPlacement: {
-    header: ["email", "github"],
+    header: ["email", "github", "googleScholar"],
     about: false,
     footer: false,
   },
 }
 
 export const NAV_LINKS: LinkConfig[] = [
-  // { href: "/projects", label: "Projects" },
+  // { href: "/projects", label: "Skills" },
   { href: "/publications", label: "Publications" },
   // { href: "/teaching", label: "Teaching" },
   // { href: "/blog", label: "Blog" },
@@ -85,9 +88,9 @@ export const PUB_CONFIG: PublicationConfig = {
   maxFirstAuthors: 6,
   maxLastAuthors: 1,
   highlightAuthor: {
-    firstName: "Alex",
-    lastName: "Morgan",
-    aliases: ["A. Morgan"],
+    firstName: "Nabigha",
+    lastName: "Mogharbel",
+    aliases: ["N. Mogharbel"],
   },
   equalSymbols: {
     first: "*",
@@ -99,9 +102,7 @@ export const PUB_CONFIG: PublicationConfig = {
 
 export const FOOTER: FooterConfig = {
   credits: true,
-  sourceCode: "https://github.com/mychiffonn/myscholar",
-  sourceContent:
-    "https://github.com/mychiffonn/myscholar/tree/main/src/content",
+  // sourceCode: "https://github.com/nabigha-mogharbel/Portfolio",
   footerLinks: [],
 }
 

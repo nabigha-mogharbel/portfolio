@@ -1,0 +1,57 @@
+[
+  {
+    "id": "biohealth-m2-2025",
+    "category": "MSc",
+    "title": "M2 BioHealth Engineering",
+    "orgs": ["Université Grenoble Alpes"],
+    "orgUrls": ["https://www.univ-grenoble-alpes.fr/"],
+    "startDate": "2025-09",
+    "endDate": "2026-09",
+    "location": "Grenoble, France",
+    "description": "Interdisciplinary training including radiopharmaceuticals, proteomics, machine learning and deep learning, AI for omics and infectious diseases."
+  },
+  {
+    "id": "biohealth-m1-2024",
+    "category": "MSc",
+    "title": "M1 BioHealth Engineering",
+    "orgs": ["Université Grenoble Alpes"],
+    "orgUrls": ["https://www.univ-grenoble-alpes.fr/"],
+    "startDate": "2024-09",
+    "endDate": "2025-06",
+    "location": "Grenoble, France",
+    "description": "Training in scientific programming with Python, statistics with Python and R, DNA systems, biotechnology of membrane and cell systems, image processing, hackathons and data challenges."
+  },
+  {
+    "id": "human-molecular-diagnostics",
+    "category": "MSc",
+    "title": "M2 Human Molecular Diagnostics",
+    "orgs": ["Lebanese University"],
+    "orgUrls": ["https://www.ul.edu.lb/"],
+    "startDate": "2020-09",
+    "endDate": "2021-10",
+    "location": "Lebanon",
+    "description": "Training in molecular diagnostics, genetic counselling, cell signalling and developmental physiopathology."
+  },
+  {
+    "id": "cellular-molecular-biology",
+    "category": "MSc",
+    "title": "M1 Cellular & Molecular Biology",
+    "orgs": ["Lebanese University"],
+    "orgUrls": ["https://www.ul.edu.lb/"],
+    "startDate": "2019-09",
+    "endDate": "2020-07",
+    "location": "Lebanon",
+    "description": "Training in molecular biology, cancer biology, genetics, applied immunology, bioinformatics, toxicology, stem cells and differentiation, and cell signalling."
+  },
+  {
+    "id": "life-earth-sciences",
+    "category": "BSc",
+    "title": "BSc Life & Earth Sciences",
+    "orgs": ["Lebanese University"],
+    "orgUrls": ["https://www.ul.edu.lb/"],
+    "startDate": "2016-09",
+    "endDate": "2019-07",
+    "location": "Lebanon",
+    "description": "Core training in cell biology, biochemistry, molecular biology, genetics, physiology, chemistry, ecology and botany."
+  }
+]

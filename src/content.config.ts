@@ -101,19 +101,34 @@ const updates = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/content/updates" }),
   schema: z.object({}),
 })
+const experienceSchema = z.object({
+  category: z.string(),
+  title: z.string(),
+  orgs: z.array(z.string()),
+  orgUrls: z.array(z.url()).optional(),
+  startDate: yearMonthDateSchema,
+  endDate: yearMonthDateSchema.optional(),
+  location: z.string().optional(),
+  description: z.string().optional(),
+  linkUrl: z.string().optional(),
+  linkTitle: z.string().optional(),
+})
 
 const experience = defineCollection({
   loader: file("./src/content/experience.json"),
-  schema: z.object({
-    category: z.enum(["research", "education", "teaching"]),
-    title: z.string(),
-    org: z.string(),
-    orgUrl: z.url().optional(),
-    startDate: yearMonthDateSchema,
-    endDate: yearMonthDateSchema.optional(),
-    location: z.string().optional(),
-    description: z.string().optional(),
-  }),
+  schema: experienceSchema,
 })
 
-export const collections = { blog, experience, people, projects, updates }
+const education = defineCollection({
+  loader: file("./src/content/education.json"),
+  schema: experienceSchema,
+})
+
+export const collections = {
+  blog,
+  experience,
+  people,
+  projects,
+  updates,
+  education,
+}

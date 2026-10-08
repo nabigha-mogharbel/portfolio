@@ -7,7 +7,10 @@
     oklch(0.4363 0.0428 281.03),
     oklch(0.8708 0.0481 273.67)
   );
-  --primary: light-dark(oklch(0.7789 0.1553 140.9), oklch(0.7789 0.1553 140.9));
+  --primary: light-dark(
+    oklch(71.895% 0.11196 322.887),
+    oklch(71.895% 0.11196 322.887)
+  );
   --primary-foreground: light-dark(oklch(0.205 0 0), oklch(0.205 0 0));
   --muted: light-dark(oklch(0.92 0.002 264.53), oklch(0.269 0 0));
   --muted-foreground: light-dark(oklch(0.556 0 0), oklch(0.708 0 0));

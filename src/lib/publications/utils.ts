@@ -560,7 +560,11 @@ export function getSelectedPublications(
   limit?: number,
 ): Publication[] {
   const selected = publications.filter((pub) => pub.selected === true)
-  return limit ? selected.slice(0, limit) : selected
+  return selected.length == 0
+    ? publications.slice(0, limit)
+    : limit
+      ? selected.slice(0, limit)
+      : selected
 }
 
 /**

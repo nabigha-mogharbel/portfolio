@@ -14,8 +14,7 @@ import { satteriSidenotes } from "./src/plugins/satteri-sidenotes"
 import { normalizeHeadings } from "./src/plugins/satteri-normalize-headings"
 
 export default defineConfig({
-  site: "https://nabigha-mogharbel.github.io",
-  base: "/portfolio",
+  site: "https://nabigha-mogharbel.github.io/portfolio",
   compressHTML: true,
   trailingSlash: "never",
   output: "static",

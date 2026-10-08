@@ -53,7 +53,7 @@ const displayed = typeof limit === "number" ? sorted.slice(0, limit) : sorted
         {entry.data.location && <span class="experience-location"> · {entry.data.location}</span>}
       </p>
       {entry.data.linkTitle && entry.data.linkUrl && (
-        <p class="experience-link"><Link href={`${import.meta.env.BASE_URL}/assets/${entry.data.linkUrl}`} external underline>
+        <p class="experience-link"><Link href={`/assets/${entry.data.linkUrl}`} external underline>
               {entry.data.linkTitle}
             </Link></p>
       )}

@@ -1,6 +1,7 @@
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSans-latin[wght].woff2") format("woff2-variations");
+  src: url("portfolio/fonts/DMSans-latin[wght].woff2")
+    format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -12,7 +13,8 @@
 
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSans-latin-ext[wght].woff2") format("woff2-variations");
+  src: url("portfolio/fonts/DMSans-latin-ext[wght].woff2")
+    format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -23,7 +25,7 @@
 
 @font-face {
   font-family: "Noto Sans CJK SC";
-  src: url("/fonts/NotoSansSC.woff2") format("woff2-variations");
+  src: url("portfolio/fonts/NotoSansSC.woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -32,7 +34,7 @@
 
 @font-face {
   font-family: "STIX Two Math";
-  src: url("/fonts/STIXTwoMath-Regular.woff2") format("woff2");
+  src: url("portfolio/fonts/STIXTwoMath-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -40,7 +42,7 @@
 
 @font-face {
   font-family: "Lilex";
-  src: url("/fonts/Lilex[wght].woff2") format("woff2-variations");
+  src: url("portfolio/fonts/Lilex[wght].woff2") format("woff2-variations");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;

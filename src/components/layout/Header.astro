@@ -16,7 +16,7 @@ const hasHeaderLinks = headerLinks.length > 0
   <div class="site-brand">
     {hasHeaderLinks ? (
         <Button
-          href="/"
+          href={import.meta.env.BASE_URL}
           variant="ghost"
           size="square"
           class="site-home"

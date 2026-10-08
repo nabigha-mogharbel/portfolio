@@ -2,6 +2,7 @@
 import type { ProfileConfig } from "@/types"
 
 import Avatar from "@/components/base/Avatar.astro"
+import Doodle from "@/components/profile/Doodle.astro"
 import Badge from "@/components/base/Badge.astro"
 import Icon from "@/components/base/Icon.astro"
 import avatar from "@/assets/avatar.png"
@@ -25,23 +26,16 @@ const aboutLinks = getProfileLinkPlacement("about")
 
 <article id="profile">
   <header class="profile-header">
+    <Doodle />
     <div class="profile-content">
       <div class="profile-heading">
         <h1>
           {profile.name}
-          {profile.pronouns && (
-              <Badge variant="outline" class="profile-pronouns">
-                {profile.pronouns}
-              </Badge>
-            )}
         </h1>
         {profile.othernames && <p class="profile-othernames">{profile.othernames}</p>}
-        <p class="profile-tagline">{profile.tagline}</p>
       </div>
 
       <div class="profile-meta">
-        <EmailLink email={profile.email} />
-
         {profile.phone && (
             <span class="profile-contact-item">
               <Icon name="mingcute:phone-line" />
@@ -56,20 +50,16 @@ const aboutLinks = getProfileLinkPlacement("about")
               audio={profile.pronunciationAudioPath}
             />
           )}
+        <p class="about">
+          BioHealth Engineering graduate with interdisciplinary background in
+          experimental and computational biology as well as scientific and
+          software programming.
+        </p>
+        <ProfileLinks keys={["email","cv"]} />
       </div>
     </div>
   </header>
 </article>
-
-<prose-content>
-  <AboutContent />
-</prose-content>
-
-{aboutLinks.length > 0 && (
-    <footer class="profile-footer">
-      <ProfileLinks keys={aboutLinks} />
-    </footer>
-  )}
 
 <style>
   .profile-header {
@@ -82,10 +72,12 @@ const aboutLinks = getProfileLinkPlacement("about")
   #profile {
     margin-block-start: var(--space-s);
   }
-
+  .profile-header .about {
+    font-size: var(--step-2);
+  }
   .profile-avatar {
-    inline-size: 7rem;
-    block-size: 7rem;
+    inline-size: 17rem;
+    block-size: 17rem;
     align-self: center;
   }
 
@@ -118,7 +110,8 @@ const aboutLinks = getProfileLinkPlacement("about")
     align-items: center;
     gap: var(--space-2xs);
     margin: 0;
-    font-size: var(--step-3);
+    color: var(--primary);
+    font-size: var(--step-4);
     font-weight: var(--font-weight-bold);
     line-height: var(--line-height-tight);
   }
@@ -163,15 +156,8 @@ const aboutLinks = getProfileLinkPlacement("about")
       flex-direction: row;
       align-items: flex-start;
     }
-
-    .profile-avatar {
-      inline-size: 12.5rem;
-      block-size: 12.5rem;
-      align-self: flex-start;
-    }
-
-    .profile-heading h1 {
-      font-size: var(--step-3);
+    #profile {
+      margin-block-start: calc(3 * var(--space-l));
     }
   }
 </style>

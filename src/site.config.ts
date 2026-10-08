@@ -59,14 +59,14 @@ export const PROFILE: ProfileConfig = {
   pronouns: "she/her",
   links: {
     github: "https://github.com/nabigha-mogharbel/",
-    cv: "/assets/Nabigha_Mogharbel_CV.pdf",
+    cv: `${import.meta.env.BASE_URL}/assets/Nabigha_Mogharbel_CV.pdf`,
     googleScholar:
       "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Nabigha+Mogharbel+&oq=nabigha",
   },
   highlightLinks: [],
   linksPlacement: {
     header: ["email", "github", "googleScholar"],
-    about: false,
+    about: true,
     footer: false,
   },
 }

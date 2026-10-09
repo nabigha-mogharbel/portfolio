@@ -8,7 +8,8 @@ import type {
 
 export const SITE: SiteConfig = {
   title: "Nabigha MOGHARBEL",
-  description: "Interdisciplinary researcher in biology.",
+  description:
+    "Interdisciplinary background in experimental and computational biology.",
   href: "https://nabigha-mogharbel.github.io/portfolio/",
   author: "Nabigha MOGHARBEL",
   dir: "ltr",
